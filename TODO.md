@@ -1,0 +1,2 @@
+- [ ] Add setting to show @gmail.com as default
+- [ ] Publish extension to Chrome Web Store and Firefox Addons
