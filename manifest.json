@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Google Domain Selector",
+  "version": "1.0",
+  "description": "Quickly sign in to Google with a pre-selected domain.",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["https://accounts.google.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Manage Domains"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://accounts.google.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "goldstriker208@gmail.com"
+    }
+  }
+}
